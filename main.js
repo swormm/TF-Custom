@@ -1,3 +1,4 @@
+
 // ==UserScript==
 // @name         TradeFlow Ultra Sniper
 // @namespace    http://tampermonkey.net/
@@ -29,6 +30,22 @@
 // TRADEFLOW CUSTOM + SNIPER SYSTEM V2
 // ========================================
 // Version avec simulation de clic sur bouton 3 SOL
+
+// Clear console
+console.clear();
+
+// ASCII Art
+const ascii = `
+ _____  ___     ___          _                  
+/__   \/ __\\   / __\\   _ ___| |_ ___  _ __ ___  
+  / /\\/ _\\    / / | | | / __| __/ _ \\| '_ \` _ \\ 
+ / / / /     / /__| |_| \\__ \\ || (_) | | | | | |
+ \\/  \\/      \\____/\\__,_|___/\\__\\___/|_| |_| |_|
+                                                
+                          made by sworm with ❤️
+`;
+console.log(ascii);
+
 
 (function() {
     console.log("🚀 TradeFlow Custom + Sniper V2 - Starting...");
@@ -1154,3 +1171,4 @@ Si vous avez besoin d'un montant différent:
 
 Pour toute question, vérifiez les logs dans la console (F12)
 */
+
