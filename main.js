@@ -1,4 +1,3 @@
-
 // ==UserScript==
 // @name         TradeFlow Ultra Sniper
 // @namespace    http://tampermonkey.net/
@@ -148,7 +147,9 @@ console.log(ascii);
                 position: fixed;
                 bottom: 20px;
                 right: 20px;
-                background: linear-gradient(135deg, #8B51FF 0%, #CB8FFF 100%);
+                background: linear-gradient(135deg, #8b51ff7e 0%, #cb8fff69 100%);
+                -webkit-backdrop-filter: blur(10px) !important; /* BLUR CONFIG */
+                border: 1px solid rgba(255, 255, 255, 1) !important; /* BLUR CONFIG */
                 color: white;
                 border: none;
                 border-radius: 50px;
@@ -157,7 +158,7 @@ console.log(ascii);
                 font-size: 13px;
                 font-weight: 600;
                 cursor: pointer;
-                box-shadow: 0 4px 15px rgba(139, 81, 255, 0.4);
+                box-shadow: 0 8px 25px rgba(139, 81, 255, 0.4);
                 z-index: 999998;
                 display: flex;
                 align-items: center;
@@ -169,43 +170,49 @@ console.log(ascii);
                 transform: translateY(-2px);
                 box-shadow: 0 6px 20px rgba(139, 81, 255, 0.6);
             }
-
-            /* Bouton Sniper sur les tokens */
+                
+            /* Bouton Sniper sur les tokens (version plus petite) */
             .tf-sniper-btn {
                 position: absolute !important;
                 top: 6px !important;
                 right: 6px !important;
                 z-index: 100 !important;
-                background: linear-gradient(135deg, #ff4757 0%, #ff6348 100%) !important;
+                background: linear-gradient(135deg, #8b51ff65 0%, #cb8fff85 100%) !important;
+                -webkit-backdrop-filter: blur(10px) !important;
+                backdrop-filter: blur(10px) !important;
                 border: none !important;
-                border-radius: 6px !important;
-                padding: 6px 10px !important;
+                border: 1px solid rgba(255, 255, 255, 1) !important;
+                border-radius: 5px !important;
+                padding: 3px 6px !important;        /* plus petit */
                 font-family: 'Inter', sans-serif !important;
-                font-size: 11px !important;
+                font-size: 9px !important;          /* plus petit */
                 font-weight: 700 !important;
                 color: white !important;
                 cursor: pointer !important;
-                opacity: 0 !important;
+                opacity: 1 !important;
                 transition: all 0.2s ease !important;
-                box-shadow: 0 2px 8px rgba(255, 71, 87, 0.4) !important;
+                box-shadow: 0 1px 4px rgba(139, 81, 255, 0.35) !important; /* ombre réduite */
                 display: flex !important;
                 align-items: center !important;
-                gap: 4px !important;
-            }
-
-            .group:hover .tf-sniper-btn {
-                opacity: 1 !important;
+                gap: 2px !important;                /* plus petit */
+                margin-top: 70px;
+                margin-right: 10px;
             }
 
             .tf-sniper-btn:hover {
-                transform: scale(1.05) !important;
-                box-shadow: 0 4px 12px rgba(255, 71, 87, 0.6) !important;
+                transform: scale(1.35) !important;
+                box-shadow: 0 2px 8px rgba(139, 81, 255, 0.5) !important;
+                border: 1px solid rgba(255, 255, 255, 1) !important;
+                background: linear-gradient(135deg, #9b61ff7c 0%, #dc9fff6b 100%) !important;
+                -webkit-backdrop-filter: blur(10px) !important;
+                backdrop-filter: blur(10px) !important;
             }
 
             .tf-sniper-btn.active {
                 background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%) !important;
                 opacity: 1 !important;
             }
+
 
             /* Modal */
             .tf-config-modal {
@@ -389,6 +396,15 @@ console.log(ascii);
                     opacity: 1;
                 }
             }
+
+            .tradeflow-playground-panel {
+                background-color: rgba(87, 51, 158, 0.34) !important;
+                backdrop-filter: blur(10px) !important;
+                -webkit-backdrop-filter: blur(10px) !important;
+                border: 1px solid rgba(255, 255, 255, 1) !important;
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+            }
+
         `;
         document.head.appendChild(style);
     }
@@ -873,7 +889,7 @@ console.log(ascii);
             position: fixed;
             top: 20px;
             right: 20px;
-            background: linear-gradient(135deg, #8B51FF 0%, #CB8FFF 100%);
+            background: linear-gradient(135deg, #8b51ff6c 0%, #cb8fff6b 100%);
             color: white;
             padding: 15px 25px;
             border-radius: 10px;
@@ -1171,4 +1187,3 @@ Si vous avez besoin d'un montant différent:
 
 Pour toute question, vérifiez les logs dans la console (F12)
 */
-
