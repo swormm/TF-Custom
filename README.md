@@ -66,7 +66,7 @@
 ### Méthode 2: Console (Temporaire)
 
 1. Ouvrez la console Chrome (`F12`)
-2. Collez le contenu du fichier `tradeflow-custom.js`
+2. Collez le contenu du fichier `injected.js`
 3. Appuyez sur `Entrée`
 
 > ⚠️ **Note**: Cette méthode est temporaire et disparaîtra au rechargement de la page.
