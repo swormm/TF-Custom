@@ -1,0 +1,23 @@
+body {
+  font-family: Arial;
+  width: 300px;
+  padding: 10px;
+}
+
+#toggleBtn {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#logs {
+  background: #111;
+  color: #0f0;
+  padding: 8px;
+  height: 150px;
+  overflow-y: auto;
+  font-family: monospace;
+  border-radius: 5px;
+}
