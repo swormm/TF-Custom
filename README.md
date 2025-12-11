@@ -282,10 +282,8 @@ Si le script n'arrive pas à détecter le panel:
 
 ### Bonnes pratiques
 
-✅ **Vérifiez toujours le token** avant de sniper  
-✅ **Utilisez des montants raisonnables** pour tester  
+✅ **Vérifiez toujours le token** avant de sniper    
 ✅ **Vérifiez votre slippage** avant chaque trade  
-✅ **Gardez votre wallet sécurisé** avec un mot de passe fort  
 
 ### Protections intégrées
 
@@ -296,11 +294,7 @@ Si le script n'arrive pas à détecter le panel:
 - ✅ Notifications claires à chaque étape
 
 ### Avertissements
-
-⚠️ **Utilisez cette extension à vos propres risques**  
-⚠️ **Ne sniquez que sur des tokens vérifiés**  
-⚠️ **Attention aux scams et aux rug pulls**  
-⚠️ **Ne partagez jamais votre phrase secrète**  
+⚠️ **Utilisez cette extension à vos propres risques (ban tradeflow etc...)**  
 
 ## 🤝 Contribuer
 
